@@ -20,11 +20,13 @@
 				user_id: '',
 				user_token: '',
 				
-				goods_list: [],//接口返回的数据
+				goods_list: [
+					
+				],//接口返回的数据
 				reachBottom: {
 					isLoad: true,//滑动到底部后是否可以继续加载
 					page: 1,
-					pageSize: 8,
+					pageSize: 3,
 				},
 			};
 		},
@@ -76,50 +78,44 @@
 				};
 				//注意看下自己的是post还是get请求。
 				//特别注意：get请求可以不添加请求头。但是post请求必须添加下面请求头。（添加原因查看uni-app官网在request方法解释的最下面）
-				uni.request({
-					method:"POST",
-					url: dateUtils.baseUrl+'Service/Goods/searchGoodsOpen?user_id='+vm.user_id+'&user_token='+vm.user_token+'&device=wap',
-					data: {
-						p: vm.reachBottom.page,//当前页数  使用这个值需要和后台确认是否有效
-						num: vm.reachBottom.pageSize,//每页返回几个  使用这个值需要和后台确认是否有效
-						
-						//下面为我示例接口使用的参数
-						supplier_id: 0,
-						user_id: vm.user_id,
-						user_token: vm.user_token,
+				
+				if (action === 'refresh') {	
+					vm.goods_list = [];
+				};
+				var arr = [
+					{
+						goods_short_name:'商品',
+						attr_str:'规格',
+						act_sign:"标志"
+					},{
+						goods_short_name:'商品',
+						attr_str:'规格',
+						act_sign:"标志"
+					},{
+						goods_short_name:'商品',
+						attr_str:'规格',
+						act_sign:"标志"
 					},
-					header: {'content-type': 'application/x-www-form-urlencoded'},
-					success: (res) => {
-						if (action === 'refresh') {	
-							vm.goods_list = [];
-						};
-						try {
-							//res.data.data.data.goods_list  这里需要根据实际接口返回的数据来进行修改
-							res.data.data.data.goods_list.forEach(item=>{
-								vm.goods_list.push(item);
-							});
-							
-							//这里是通过res.data.data.data.goods_list 返回数据的长度来判断当前是不是到了最后一页了
-							if(res.data.data.data.goods_list.length < vm.reachBottom.pageSize){
-								vm.reachBottom.isLoad=false;
-							}else{
-								vm.reachBottom.isLoad=true;
-								vm.reachBottom.page++;
-							};
-						} catch(e) {
-							//TODO handle the exception
-							console.log('数据接口错误');
-						};
-						
-						uni.stopPullDownRefresh();
-						uni.hideLoading();
-					},
-					fail:(err) => {
-						console.log("err",err);
-						uni.stopPullDownRefresh();
-						uni.hideLoading();
-					}
-				});
+				];
+				try {
+					//res.data.data.data.goods_list  这里需要根据实际接口返回的数据来进行修改
+					arr.forEach(item=>{
+						vm.goods_list.push(item);
+					});
+					
+					//这里是通过res.data.data.data.goods_list 返回数据的长度来判断当前是不是到了最后一页了
+					if(arr.length < vm.reachBottom.pageSize){
+						vm.reachBottom.isLoad=false;
+					}else{
+						vm.reachBottom.isLoad=true;
+						vm.reachBottom.page++;
+					};
+				} catch(e) {
+				};
+				
+				uni.stopPullDownRefresh();
+				uni.hideLoading();
+					
 				
 			},
 		}

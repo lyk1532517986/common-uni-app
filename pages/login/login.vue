@@ -25,7 +25,7 @@
 			</view>
 		</view>
 		
-		<view class="otherLogin" @click="toOtherLogin" v-if="button_status>0">
+		<view class="otherLogin" v-if="button_status>0">
 			账号密码登录
 		</view>
 	</view>
@@ -49,54 +49,15 @@
 		},
 		onLoad(event) {
 			console.log(event);
+			//暂无登录逻辑，强制跳转到首页
 			uni.redirectTo({
 				url: "/pages/index/index"
 			});
-			// var vm=this;
-			// vm.sale_user_id=uni.getStorageSync('saleUserId');
 		},
 		onShow() {
-// 			var vm=this;
-// 			vm.checkShowLogin1();
-// 			vm.unionid = uni.getStorageSync('unionid');
-// 			vm.user_id = uni.getStorageSync('user_id');
-// 			vm.fromPage = uni.getStorageSync('fromPage');
-// 			vm.region_id = uni.getStorageSync('region_id');
-// 			vm.product_id = uni.getStorageSync('product_id');
-// 			vm.type_detail = uni.getStorageSync('type_detail');
-// 
-// 			wx.checkSession({
-// 				success(res) {
-// 					if(vm.unionid&&vm.user_id){
-// 						uni.redirectTo({
-// 							url: "/pages/index/index"
-// 						});
-// 					}
-// 				},
-// 				fail(err) {
-// 					console.log("checkSession.fail",err);
-// 					
-// 					if(vm.unionid&&vm.user_id){
-// 						console.log('本地已经有 user_id 和 unionid数据可以直接跳转了')
-// 						uni.redirectTo({
-// 							url: "/pages/index/index"
-// 						});
-// 					} else {
-// 						console.log('需要填写AppID才可以授权')
-// 					}
-// 				}
-// 			});
-// 			
-			
-			
+			//登录逻辑
 		},
 		methods:{
-			onGotUserInfo2(e){
-				console.log(e)
-			},
-			clickevent(){
-				
-			},
 			onGotUserInfo(e) {
 				console.log(e);
 				var vm=this;
@@ -136,50 +97,17 @@
 			codeLogin(code,iv,encryptedData){
 				console.log(code,iv,encryptedData);
 				var vm=this;
-				uni.request({
-					url: dateUtils.baseUrl+'Integral/api/getXcxUserInfo',
-					data: {
-						code:code,
-						iv:iv,
-						encryptedData:encryptedData
-					},
-					success:function(res) {
-						console.log("getXcxUserInfo",res);
-						if(res.data.status>0){
-							uni.setStorageSync('unionid', res.data.data.unionId);
-							uni.setStorageSync('userImg', res.data.data.avatarUrl);
-							uni.setStorageSync('userName', res.data.data.nickName);
-							uni.setStorageSync('openId', res.data.data.openId);
-							vm.toDoLogin(res.data.data.unionId);
-						}
-					}
-				});
+				
+				//获取下面微信授权所需参数
+				// uni.setStorageSync('unionid', unionId);
+				// uni.setStorageSync('userImg', avatarUrl);
+				// uni.setStorageSync('userName', nickName);
+				// uni.setStorageSync('openId', openId);
+				vm.toDoLogin();//传入unionId
+						
 			},
 			toDoLogin(unionid){
-				var vm=this;
-				uni.request({
-					url: dateUtils.baseUrl+'Integral/api/userLogin',
-					data: {
-						froms:'xcx',
-						wxid:unionid,
-						sale_user_id:vm.sale_user_id
-					},
-					success: (res) => {
-						console.log(res);
-						if(res.data.code==23){
-							var region_id=res.data.data.region_id;
-							var user_id=res.data.data.user_id;
-							var mobile_phone=res.data.data.mobile_phone;
-							uni.setStorageSync('userImg', res.data.data.headimg);
-							uni.setStorageSync('cipher_text', res.data.data.cipher_text);
-							uni.setStorageSync('mobile_phone', res.data.data.mobile_phone);
-							uni.setStorageSync('region_id', res.data.data.region_id);
-							uni.setStorageSync('region_name', res.data.data.region_name);
-							uni.setStorageSync('user_id', res.data.data.user_id);
-							uni.setStorageSync('userName', res.data.data.nickname);
-							uni.setStorageSync('user_token', res.data.data.user_token_data.user_token);
-							uni.setStorageSync('is_sale', res.data.data.is_sale);
-							
+						if(true){
 							
 							uni.showToast({
 								title: '登录成功',
@@ -204,23 +132,7 @@
 					}
 				});
 			},
-			toOtherLogin(){
-				uni.navigateTo({
-					url: "/pages/login1/login1"
-				})
-			},
-			checkShowLogin1(){
-				var vm=this;
-				uni.request({
-					url: dateUtils.baseUrl+'Integral/api/setButtonStatus',
-					success(res) {
-						vm.button_status=res.data.button_status;
-					},
-					fail(err) {
-						console.log(err);
-					}
-				});
-			},
+			
 		}
 	}
 </script>

@@ -95,49 +95,6 @@ var dateUtils = {
 		var a = str.split(/[^0-9]/);
 		return new Date(a[0], a[1] - 1, a[2], a[3], a[4], a[5]);
 	},
-	statisticsAdd:function(option){
-		uni.request({
-			// url:"https://app.soufucai.com/Integral/api/statisticsAdd",
-			url:"https://testapp.soufucai.com/Integral/api/statisticsAdd",
-			data:{
-				browse_type:option.browse_type,
-				add_time:option.add_time,
-				end_time:option.end_time,
-				type:1,
-				type_detail:option.type_detail,
-				user_id:option.user_id,
-				url:option.url,
-				product_id:option.product_id,
-				title:option.title,
-				region_id:option.region_id,
-				from:1,
-				mobile_phone:option.mobile_phone,
-			},
-			success(res) {
-				console.log("statisticsAdd.success",res);
-			},
-			fail(err) {
-				console.log("statisticsAdd.fail",err);
-			}
-		})
-	},
-	phoneAdd:function(option){
-		uni.request({
-			url:"",
-			data:{
-				user_id:option.user_id,
-				user_name:option.user_name,
-				tel:option.tel,
-				region_id:option.region_id
-			},
-			success(res) {
-				console.log("phoneAdd.success",res);
-			},
-			fail(err) {
-				console.log("phoneAdd.fail",err);
-			}
-		})
-	},
 	baseUrl:""
 };
 
