@@ -1,1 +1,0 @@
-<template name="e146271e"><view style="width: 100%; height: 100%;" class="_view Me146271e"><view class="_view Me146271e myMap" style="width: 100%; height: 100%;"><map id="myMap" style="width: 100%; height: 100%;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{covers}}" polyline="{{polyline}}" class="_map Me146271e"></map></view></view></template>

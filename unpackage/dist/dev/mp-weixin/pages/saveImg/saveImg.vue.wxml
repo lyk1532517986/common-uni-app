@@ -1,1 +1,0 @@
-<template name="1c6d8345"><view class="_view M1c6d8345"><view class="_view M1c6d8345">需要合法域名配置</view><view bindtap="handleProxy" data-eventid="{{'1c6d8345-0'}}" data-comkey="{{$k}}" class="_view M1c6d8345">保存图片</view><view class="_view M1c6d8345 e">fail1:{{fail1}}<view class="_br M1c6d8345"></view>fail2:{{fail2}}</view></view></template>

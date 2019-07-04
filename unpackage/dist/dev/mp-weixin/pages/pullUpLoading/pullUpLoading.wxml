@@ -1,2 +1,0 @@
-<import src="./pullUpLoading.vue.wxml" />
-    <template is="77fcdc31" data="{{ ...$root['0'], $root }}"/>

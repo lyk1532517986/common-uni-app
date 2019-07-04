@@ -1,1 +1,0 @@
-<template name="0219593d"><picker class="_picker M0219593d rui-picker rui-class" mode="multiSelector" range="{{times}}" value="{{timesIndex}}" disabled="{{curDisabled}}" bindchange="handleProxy" bindcancel="handleProxy" bindcolumnchange="handleProxy" data-eventid="{{'0219593d-0'}}" data-comkey="{{$k}}">{{curValue}}</picker></template>

@@ -1,1 +1,0 @@
-<import src="/components/uni-countdown.vue.wxml" /><template name="28be4e1b"><view class="_view M28be4e1b content"><template data="{{...$root['0'], ...$root[$kk+'28be4e1b-0'],$root}}" is="26d226e8"></template><view class="_view M28be4e1b size">注意：<view class="_br M28be4e1b"></view>时间格式必须是：yyyy-yy-yy xx:xx:xx</view></view></template>

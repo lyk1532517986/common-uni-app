@@ -1,2 +1,0 @@
-<import src="./heatmap.vue.wxml" />
-    <template is="1d0e3e11" data="{{ ...$root['0'], $root }}"/>
