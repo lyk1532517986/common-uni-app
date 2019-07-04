@@ -1,0 +1,1 @@
+<template name="2d1ba397"><view class="_view M2d1ba397"><view class="_view M2d1ba397">保存网络图片到本地</view><button bindtap="handleProxy" data-eventid="{{'2d1ba397-0'}}" data-comkey="{{$k}}" class="_button M2d1ba397">保存</button></view></template>

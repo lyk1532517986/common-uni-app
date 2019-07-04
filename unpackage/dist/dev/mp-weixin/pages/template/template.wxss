@@ -1,0 +1,16 @@
+.content.data-v-74c47ed1 {
+  padding: 25rpx 25rpx 110px;
+  background-color: #eee;
+}
+.box.data-v-74c47ed1 {
+  margin-top: 20rpx;
+}
+.same.data-v-74c47ed1 {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  line-height: 37rpx;
+  background-color: #fff;
+  color: #000;
+  padding: 20rpx;
+}
+

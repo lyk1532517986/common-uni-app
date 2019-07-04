@@ -1,0 +1,20 @@
+
+.content {
+	padding: 25rpx;
+	background-color: #eee;
+}
+.btn {
+	width: 236rpx;
+	height: 77rpx;
+	text-align: center;
+	line-height: 77rpx;
+	background-color: #F5333D;
+	color: #fff;
+	margin: 50rpx auto;
+}
+.size {
+	font-size: 26rpx;
+	line-height: 37rpx;
+	color: #666;
+}
+

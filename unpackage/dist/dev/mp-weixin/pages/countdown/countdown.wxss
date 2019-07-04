@@ -1,0 +1,64 @@
+
+.uni-countdown {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+		padding: 2rpx 0;
+		-webkit-flex-wrap: nowrap;
+		    -ms-flex-wrap: nowrap;
+		        flex-wrap: nowrap;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+}
+.uni-countdown-splitor {
+		width: auto !important;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		line-height: 44rpx;
+		padding: 0 5rpx;
+}
+.uni-countdown-numbers {
+		line-height: 44rpx;
+		width: auto !important;
+		padding: 0 10rpx;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		height: 44rpx;
+		-webkit-border-radius: 8rpx;
+		        border-radius: 8rpx;
+		margin: 0 5rpx;
+		border: 1px solid #000000;
+		font-size: 22rpx;
+}
+
+
+.clr {
+	color: red;
+}
+.content {
+	padding: 25rpx;
+	background-color: #eee;
+}
+.size {
+	font-size: 26rpx;
+	line-height: 37rpx;
+	color: #666;
+}
+.btn {
+	width: 236rpx;
+	height: 77rpx;
+	text-align: center;
+	line-height: 77rpx;
+	background-color: #F5333D;
+	color: #fff;
+	margin: 50rpx auto;
+}
+
+

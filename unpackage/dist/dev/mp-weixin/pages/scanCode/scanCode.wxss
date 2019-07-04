@@ -1,0 +1,32 @@
+.content .form-list {
+  width: 750rpx;
+  height: 80rpx;
+  position: relative;
+}
+.content .form-list text {
+  width: 150rpx;
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+  float: left;
+  text-align: center;
+}
+.content .form-list .uni-input {
+  float: left;
+  width: 600rpx;
+  border: 1px solid #ddd;
+  height: 80rpx;
+  min-height: 80rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15rpx;
+}
+.content .form-list .scan {
+  position: absolute;
+  top: 10rpx;
+  right: 20rpx;
+  width: 60rpx;
+  height: 56.8rpx;
+  z-index: 111;
+}
+

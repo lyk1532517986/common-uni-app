@@ -1,0 +1,2 @@
+<import src="./sidePull1.vue.wxml" />
+    <template is="537b221a" data="{{ ...$root['0'], $root }}"/>

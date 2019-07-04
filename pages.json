@@ -1,0 +1,181 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/login/login",
+		    "style" : {
+		        "navigationBarTitleText" : "登录"
+		    }
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+		    "path" : "pages/sidePull/index",
+		    "style" : {
+				"navigationBarTitleText": "筛选"
+			}
+		},
+		{
+		    "path" : "pages/sidePull/sidePull1",
+		    "style" : {
+				"navigationBarTitleText": "筛选样式1"
+			}
+		},
+		{
+            "path" : "pages/sidePull/sidePull2",
+            "style" : {
+				"navigationBarTitleText": "筛选样式2"
+			}
+        },
+		{
+            "path" : "pages/timeScreening/index",
+            "style" : {
+				"navigationBarTitleText": "时间选择器"
+			}
+        },
+		{
+            "path" : "pages/search/index",
+            "style" : {
+            	"navigationBarTitleText": "搜索"
+            }
+        },
+		{
+            "path" : "pages/popup/index",
+            "style" : {
+				"navigationBarTitleText": "浮层"
+			}
+        },
+		{
+            "path" : "pages/botSele/index",
+            "style" : {
+				"navigationBarTitleText": "底部sele"
+			}
+        },
+		{
+		    "path" : "pages/botSele/selector1",
+		    "style" : {
+				"navigationBarTitleText": "单列选择器"
+			}
+		},
+		{
+		    "path" : "pages/botSele/selector2",
+		    "style" : {
+				"navigationBarTitleText": "多列选择"
+			}
+		},
+		{
+		    "path" : "pages/botSele/selector3",
+		    "style" : {
+				"navigationBarTitleText": "2级联动"
+			}
+		},
+		{
+		    "path" : "pages/botSele/selector4",
+		    "style" : {
+				"navigationBarTitleText": "3级联动"
+			}
+		},
+		{
+            "path" : "pages/countdown/countdown",
+            "style" : {
+				"navigationBarTitleText": "倒计时"
+			}
+        },
+		{
+            "path" : "pages/template/template",
+            "style" : {
+				"navigationBarTitleText": "页面模板"
+			}
+        },
+		{
+            "path" : "pages/pullUpLoading/pullUpLoading",
+            "style" : {
+				"navigationBarTitleText": "上拉加载",
+				"enablePullDownRefresh" : true
+			}
+        },
+		{
+            "path" : "pages/dropDownRefresh/dropDownRefresh",
+            "style" : {
+				"navigationBarTitleText": "下拉刷新",
+				"enablePullDownRefresh" : true,
+				"backgroundTextStyle": "light"
+			}
+        },
+		{
+            "path" : "pages/richText/richText",
+            "style" : {
+				"navigationBarTitleText": "富文本解析"
+			}
+        },
+		{
+            "path" : "pages/qrcode/qrcode",
+            "style" : {
+				"navigationBarTitleText": "生成二维码"
+			}
+        },
+		{
+            "path" : "pages/echarts/echarts",
+            "style" : {
+				"navigationBarTitleText": "折线图"
+			}
+        },
+		{
+		    "path" : "pages/leftDel/leftDel",
+		    "style" : {
+				"navigationBarTitleText": "左滑删除"
+			}
+		},
+		{
+            "path" : "pages/saveImg/saveImg",
+            "style" : {
+				"navigationBarTitleText": "保存到相册"
+			}
+        },
+		{
+            "path" : "pages/canvasImg/canvasImg",
+            "style" : {
+				"navigationBarTitleText": "canvas生成图片"
+			}
+        },
+		{
+            "path" : "pages/relationDiagram/relationDiagram",
+            "style" : {
+				"navigationBarTitleText": "canvas生成关系图"
+			}
+        }
+        ,{
+            "path" : "pages/map/map",
+            "style" : {
+				"navigationBarTitleText": "路径轨迹图"
+			}
+        }
+        ,{
+            "path" : "pages/heatmap/heatmap",
+            "style" : {
+				"navigationBarTitleText": "仿热力图"
+			}
+        }
+        ,{
+            "path" : "pages/scanCode/scanCode",
+            "style" : {
+				"navigationBarTitleText":"微信API扫码"
+			}
+        }
+        ,{
+            "path" : "pages/saveImageToPhotosAlbum/saveImageToPhotosAlbum",
+            "style" : {
+				"navigationBarTitleText":"保存图片到本地"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

@@ -1,0 +1,2 @@
+<import src="./saveImageToPhotosAlbum.vue.wxml" />
+    <template is="2d1ba397" data="{{ ...$root['0'], $root }}"/>

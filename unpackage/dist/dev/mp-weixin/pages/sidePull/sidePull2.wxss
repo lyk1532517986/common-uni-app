@@ -1,0 +1,90 @@
+
+.btn {
+	width: 236rpx;
+	height: 77rpx;
+	text-align: center;
+	line-height: 77rpx;
+	background-color: #F5333D;
+	color: #fff;
+	margin: 50rpx auto;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+  width: 0;
+  height: 0;
+}
+.filterDrawer {
+  padding: 30rpx;
+  position: relative;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.filterDrawer .uni-title {
+  height: 37rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #333333;
+  line-height: 37rpx;
+  padding: 0;
+  margin-bottom: 20rpx;
+}
+.filterDrawer .filter-list .filter-item {
+  width: 108rpx;
+  height: 57rpx;
+  line-height: 57rpx;
+  text-align: center;
+  background: #f5f5f5;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  font-size: 24rpx;
+  margin-right: 19rpx;
+  margin-bottom: 19rpx;
+  float: left;
+}
+.filterDrawer .filter-list .filter-item:nth-child(4n) {
+  margin-right: 0rpx;
+}
+.filterDrawer .filter-list .filter-item.active {
+  color: #fff;
+  background-color: #F5333D;
+}
+.filterDrawer .btn-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 30rpx;
+}
+.filterDrawer .btn-box .Reset-btn {
+  width: 236rpx;
+  height: 77rpx;
+  line-height: 77rpx;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  border: 1px solid #F5333D;
+  color: #F5333D;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 25rpx;
+}
+.filterDrawer .btn-box .submit-btn {
+  width: 236rpx;
+  height: 77rpx;
+  line-height: 77rpx;
+  background: #F5333D;
+  color: #fff;
+  -webkit-border-radius: 4rpx;
+          border-radius: 4rpx;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+

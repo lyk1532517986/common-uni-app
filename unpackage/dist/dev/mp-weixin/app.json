@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/sidePull/index",
+    "pages/sidePull/sidePull1",
+    "pages/sidePull/sidePull2",
+    "pages/timeScreening/index",
+    "pages/search/index",
+    "pages/popup/index",
+    "pages/botSele/index",
+    "pages/botSele/selector1",
+    "pages/botSele/selector2",
+    "pages/botSele/selector3",
+    "pages/botSele/selector4",
+    "pages/countdown/countdown",
+    "pages/template/template",
+    "pages/pullUpLoading/pullUpLoading",
+    "pages/dropDownRefresh/dropDownRefresh",
+    "pages/richText/richText",
+    "pages/qrcode/qrcode",
+    "pages/echarts/echarts",
+    "pages/leftDel/leftDel",
+    "pages/saveImg/saveImg",
+    "pages/canvasImg/canvasImg",
+    "pages/relationDiagram/relationDiagram",
+    "pages/map/map",
+    "pages/heatmap/heatmap",
+    "pages/scanCode/scanCode",
+    "pages/saveImageToPhotosAlbum/saveImageToPhotosAlbum"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap74.json"
+}
